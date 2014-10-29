@@ -52,7 +52,7 @@ public class LambdaInstancesTest {
 	// Not everything that looks like a capture actually captures any state at
 	// the point of lambda creation.
 
-	static Runnable createLambdaWithApparentCapture() {
+	Runnable createLambdaWithApparentCapture() {
 		return () -> System.out.println();
 	}
 
